@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS.ON</title>
+    <link rel="icon" type="image/x-icon" href="ressources/img/BG1.png"> <!-- mettre une vraie icône -->
+    <link rel="stylesheet" href="ressources/css/global.css">
+    <link rel="stylesheet" href="ressources/js/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <p id="icon">+ + +</p>
+        <p id="icon">+ + +</p>
+        <p id="icon">+ + +</p>
+    </header>
+
+    <!-- SECTION -->
+    <section>
+        <article>
+            <div class="links">
+                <button onclick="ouvrirFenetre('fenetre-biography')">Biography</button>
+                <button onclick="ouvrirFenetre('fenetre-content')">Content</button>
+                <button onclick="ouvrirFenetre('fenetre-projects')">Projects</button>
+                <button onclick="ouvrirFenetre('fenetre-contact')">Contact</button>
+            </div>
+            <img src="ressources/img/LOGO-ISON.png">
+        </article>
+
+        <div id="fenetre-biography" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-biography')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Biographie
+                    <span class="fermer" onclick="fermerFenetre('fenetre-biography')">&times;</span>
+                </div>
+                <div class="content">
+                    <p>
+                        <h1>IS.on // Sontacred</h1>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium tenetur officia repudiandae incidunt, quasi exercitationem quam a sint, modi quos similique illum obcaecati consequuntur, eos repellat. Debitis earum consectetur reprehenderit voluptate labore sint aliquid quasi asperiores voluptas, rerum maxime. Rem, eaque tenetur nisi modi tempora consectetur dignissimos iure laborum adipisci. Quos, aut tempore earum assumenda minima aliquam officia deserunt alias beatae nostrum aliquid ratione consectetur incidunt, aperiam voluptas. Expedita consequatur ullam harum eos soluta dolore maiores beatae facilis pariatur hic debitis labore, voluptate minima sunt, voluptatum, error unde! Consequatur voluptates consequuntur officia facere ipsa odio corrupti itaque inventore ea nulla at reprehenderit asperiores voluptatibus nostrum, eius delectus voluptatum dolores saepe deserunt ratione voluptate! Hic exercitationem quod esse soluta! Sit rem corporis obcaecati esse tempore ea sapiente doloremque soluta fugiat vitae tenetur sunt eum mollitia nam iure distinctio, illo cupiditate provident vero eligendi ipsam voluptatem! Nobis enim corporis porro odio quia quas? Repellendus, atque, eum saepe dolore odio nesciunt omnis ipsa fugiat porro, eveniet quos nulla veniam maiores pariatur cumque vero unde? Quasi voluptatem consequatur, sint iste consectetur accusantium ducimus nostrum suscipit corporis ratione ipsa itaque voluptas debitis velit dolorem eligendi nam? Quos ratione iure molestiae unde a iusto maiores laudantium! Officia eius ea adipisci maiores recusandae nulla alias quas numquam ut quia deserunt et dolore iste ullam accusantium illo ad, incidunt quisquam. Doloribus aperiam impedit in totam ut cum ea fuga, natus autem repellat dolorum, fugiat iste voluptatem quam! Autem labore exercitationem incidunt maxime pariatur atque modi vero minima! Voluptatibus doloremque, itaque rem a aliquid aut sunt delectus debitis fugiat impedit perferendis, architecto at qui autem praesentium, unde voluptate? Ipsum ad officia, dolores deserunt cupiditate earum in debitis a obcaecati? Ipsa in aperiam culpa expedita alias officia magni incidunt asperiores cum. Facilis reiciendis sapiente quas odio, fugiat totam asperiores beatae? Neque officia nemo deleniti temporibus, aliquam magni dolorum eius, aperiam quisquam culpa debitis. Aut nam beatae harum? Beatae recusandae fuga vero iure rerum sint consequatur minus, mollitia similique dolor quis fugit? Earum quis quisquam adipisci. Sint perspiciatis a doloremque ut commodi! Molestias nostrum modi velit quos excepturi explicabo minima ea qui illo dolore. Quos commodi iusto aliquam dicta, perspiciatis eos culpa, dolor neque fugiat tenetur eveniet soluta ducimus? Dolor vero, sequi nihil eum nobis totam quas temporibus beatae iure laudantium sed tempore veritatis explicabo expedita dolores dicta magnam omnis. Ipsum consectetur similique a, aliquam nobis dolor modi nemo reprehenderit. Aliquam quo qui hic recusandae eius sed voluptate sapiente iste nam doloremque debitis rerum exercitationem, incidunt nisi aut odit voluptatum.
+                        <br/>- ////\/
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-content" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-content')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Contenu
+                    <span class="fermer" onclick="fermerFenetre('fenetre-content')">&times;</span>
+                </div>
+                <div class="content">
+                    <img src="ressources/img/dexemple 1.png">
+                    <div class="description">
+                        <p>[01]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/dexemple 2.png">
+                    <div class="description">
+                        <p>[02]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/dexemple 3.png">
+                    <div class="description">
+                        <p>[03]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/dexemple 4.png">
+                    <div class="description">
+                        <p>[04]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/dexemple 5.png">
+                    <div class="description">
+                        <p>[05]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/dexemple 6.png">
+                    <div class="description" id="last">
+                        <p>[06]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-projects" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-projects')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Projets
+                    <span class="fermer" onclick="fermerFenetre('fenetre-projects')">&times;</span>
+                </div>
+                <div class="content">
+                    <p>
+                        [ <span id="V">online</span> ] --------------------------------------<br/>-<br/>
+                        Recherche de projets en cours...<br/>>>> vide
+                        <br/>-<br/>-------------------------------------- [ <span id="R">offline</span> ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-contact" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-contact')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Contact
+                    <span class="fermer" onclick="fermerFenetre('fenetre-contact')">&times;</span>
+                </div>
+                <div class="content">
+                    <img src="ressources/img/call.png"> <!-- IMAGE -->
+                    <p class="contact">Mail : sontacred@gmail.com</p>
+                    <p class="contact">Tel : 07.68.47.09.20</p>
+                    <p class="lien">
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="copy"> / / / /\/ /</p>
+        <p id="icon">+ + +</p>
+        <p class="copy">@ IS.ON</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        let zIndexMax = 1000;
+        let dragOffsetX = 0;
+        let dragOffsetY = 0;
+        let elementEnCours = null;
+        const positionsSauvegardees = {};
+
+        function ouvrirFenetre(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                zIndexMax++;
+                modal.style.display = "block";
+                modal.style.zIndex = zIndexMax;
+
+                const modalContent = modal.querySelector('.modal-content');
+
+                // Si on a déjà une position sauvegardée, on la remet
+                if (positionsSauvegardees[id]) {
+                    modalContent.style.left = positionsSauvegardees[id].left;
+                    modalContent.style.top = positionsSauvegardees[id].top;
+                    modalContent.style.transform = 'none';
+                } else {
+                    // Sinon, centre par défaut
+                    modalContent.style.left = '50%';
+                    modalContent.style.top = '50%';
+                    modalContent.style.transform = 'translate(-50%, -50%)';
+                }
+            }
+        }
+
+        function fermerFenetre(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function amenerAuPremierPlan(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                zIndexMax++;
+                modal.style.zIndex = zIndexMax;
+            }
+        }
+
+        function initDrag(e, modalWrapper) {
+            // On cible ici le .modal-content à déplacer
+            const modalContent = modalWrapper.querySelector(".modal-content");
+            elementEnCours = modalContent;
+
+            const rect = modalContent.getBoundingClientRect();
+            dragOffsetX = e.clientX - rect.left;
+            dragOffsetY = e.clientY - rect.top;
+
+            document.addEventListener('mousemove', deplacer);
+            document.addEventListener('mouseup', arreterDeplacer);
+        }
+
+        function deplacer(e) {
+            if (elementEnCours) {
+                let newLeft = e.clientX - dragOffsetX;
+                let newTop = e.clientY - dragOffsetY;
+
+                // Empêche la sortie de l'écran
+                const maxLeft = window.innerWidth - elementEnCours.offsetWidth;
+                const maxTop = window.innerHeight - elementEnCours.offsetHeight;
+
+                elementEnCours.style.left = Math.max(0, Math.min(newLeft, maxLeft)) + 'px';
+                elementEnCours.style.top = Math.max(0, Math.min(newTop, maxTop)) + 'px';
+                elementEnCours.style.transform = 'none'; // Supprime le centrage initial
+            }
+        }
+
+        function arreterDeplacer() {
+            if (elementEnCours) {
+                const id = elementEnCours.closest('.modal').id;
+                positionsSauvegardees[id] = {
+                    left: elementEnCours.style.left,
+                    top: elementEnCours.style.top
+                };
+            }
+
+            document.removeEventListener('mousemove', deplacer);
+            document.removeEventListener('mouseup', arreterDeplacer);
+            elementEnCours = null;
+        }
+
+    </script>
+
+</body>
+
+</html>

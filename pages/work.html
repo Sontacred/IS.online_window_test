@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS.ON</title>
+    <link rel="icon" type="image/x-icon" href="ressources/img/BG1.png"> <!-- mettre une vraie icône -->
+    <link rel="stylesheet" href="../ressources/css/global.css">
+    <link rel="stylesheet" href="../ressources/css/work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <a href="../index.html">
+                <h2>IS.ON</h2>
+            </a>
+            <div class="navbar">
+                <a href="#">About</a>
+                <a href="#">Work</a>
+                <a href="#">Commissions</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Commisions</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+    </header>
+
+    <!-- SECTION -->
+    <section>
+        <article class="present">
+            <div class="title">
+                <h1>Work gallery</h1>
+                <div class="subtitle">
+                    <p>History of my creations</p>
+                    <p>@  IS.ON</p>
+                </div>
+            </div>
+        </article>
+        <article class="gallery">
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 1.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 2.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 3.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 4.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 5.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 6.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+            <div class="container" id="topline">
+                <img src="../ressources/img/dexemple 9.png">
+                <div class="description">
+                    <h2>Wide banner (May 2025)</h2>
+                    <p>A wide banner made as a card to show my design identity and nicknames</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h2><i>IS.ON</i></h2>
+            <div class="footer-links">
+                <a href="#">Informations</a>
+                <a href="#">Contact</a>
+                <a href="#">Github</a>
+            </div>
+            <a href="#" id="media">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" id="media">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" id="media">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+
+</html>
