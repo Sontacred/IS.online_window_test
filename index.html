@@ -27,9 +27,10 @@
         <article>
             <div class="links">
                 <button onclick="ouvrirFenetre('fenetre-biography')">Biography</button>
-                <button onclick="ouvrirFenetre('fenetre-content')">Content</button>
+                <button onclick="ouvrirFenetre('fenetre-content')">Design</button>
                 <button onclick="ouvrirFenetre('fenetre-projects')">Projects</button>
                 <button onclick="ouvrirFenetre('fenetre-contact')">Contact</button>
+                <button onclick="ouvrirFenetre('fenetre-collection')">Collection</button>
             </div>
             <img src="ressources/img/LOGO-ISON.png">
         </article>
@@ -53,36 +54,36 @@
         <div id="fenetre-content" class="modal">
             <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-content')">
                 <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
-                    Contenu
+                    Design
                     <span class="fermer" onclick="fermerFenetre('fenetre-content')">&times;</span>
                 </div>
                 <div class="content">
-                    <img src="ressources/img/dexemple 1.png">
+                    <img src="ressources/img/design/collection solid/solid-son 1.png">
                     <div class="description">
                         <p>[01]</p>
                         <p>Title - Collection name - IS.ON</p>
                     </div>
-                    <img src="ressources/img/dexemple 2.png">
+                    <img src="ressources/img/design/collection solid/solid-son 2.png">
                     <div class="description">
                         <p>[02]</p>
                         <p>Title - Collection name - IS.ON</p>
                     </div>
-                    <img src="ressources/img/dexemple 3.png">
+                    <img src="ressources/img/design/collection solid/solid-son 3.png">
                     <div class="description">
                         <p>[03]</p>
                         <p>Title - Collection name - IS.ON</p>
                     </div>
-                    <img src="ressources/img/dexemple 4.png">
+                    <img src="ressources/img/design/collection solid/solid-text 1.png">
                     <div class="description">
                         <p>[04]</p>
                         <p>Title - Collection name - IS.ON</p>
                     </div>
-                    <img src="ressources/img/dexemple 5.png">
+                    <img src="ressources/img/design/collection solid/solid-text 2.png">
                     <div class="description">
                         <p>[05]</p>
                         <p>Title - Collection name - IS.ON</p>
                     </div>
-                    <img src="ressources/img/dexemple 6.png">
+                    <img src="ressources/img/design/collection solid/solid-text 3.png">
                     <div class="description" id="last">
                         <p>[06]</p>
                         <p>Title - Collection name - IS.ON</p>
@@ -126,6 +127,42 @@
                 </div>
             </div>
         </div>
+
+        <div id="fenetre-collection" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-collection')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Collection
+                    <span class="fermer" onclick="fermerFenetre('fenetre-collection')">&times;</span>
+                </div>
+                <div class="content">
+                    <img src="ressources/img/88x31/1of2.gif">
+                    <img src="ressources/img/88x31/amiga.gif">
+                    <img src="ressources/img/88x31//arcnet.gif">
+                    <img src="ressources/img/88x31/awch_88x31.gif">
+                    <img src="ressources/img/88x31/button7.gif">
+                    <img src="ressources/img/88x31/wii_button.gif">
+                    <img src="ressources/img/88x31/ralseismokingadart.gif">
+                    <img src="ressources/img/88x31/firefox3.gif">
+                    <img src="ressources/img/88x31/freebielistbutton.gif">
+                    <img src="ressources/img/88x31/hicolor.gif">
+                    <img src="ressources/img/88x31/madewithamiga.gif">
+                    <img src="ressources/img/88x31/narrow-head.gif">
+                    <img src="ressources/img/88x31/newlambda.gif">
+                    <img src="ressources/img/88x31/piss.gif">
+                    <img src="ressources/img/88x31/sabrina.gif">
+                    <img src="ressources/img/88x31/sailormoonmicrobar.gif">
+                    <img src="ressources/img/88x31//so.gif">
+                    <img src="ressources/img/88x31//surf-to.gif">
+                    <img src="ressources/img/88x31/terrorpuppe.gif">
+                    <img src="ressources/img/88x31/theorb.gif">
+                    <img src="ressources/img/88x31/top_6.gif">
+                    <img src="ressources/img/88x31/winrar4.gif">
+                    <img src="ressources/img/88x31/xp.gif">
+                    <img src="ressources/img/88x31/zymicbest.gif">
+
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
@@ -136,94 +173,7 @@
     </footer>
 
     <!-- SCRIPT -->
-    <script>
-        let zIndexMax = 1000;
-        let dragOffsetX = 0;
-        let dragOffsetY = 0;
-        let elementEnCours = null;
-        const positionsSauvegardees = {};
-
-        function ouvrirFenetre(id) {
-            const modal = document.getElementById(id);
-            if (modal) {
-                zIndexMax++;
-                modal.style.display = "block";
-                modal.style.zIndex = zIndexMax;
-
-                const modalContent = modal.querySelector('.modal-content');
-
-                // Si on a déjà une position sauvegardée, on la remet
-                if (positionsSauvegardees[id]) {
-                    modalContent.style.left = positionsSauvegardees[id].left;
-                    modalContent.style.top = positionsSauvegardees[id].top;
-                    modalContent.style.transform = 'none';
-                } else {
-                    // Sinon, centre par défaut
-                    modalContent.style.left = '50%';
-                    modalContent.style.top = '50%';
-                    modalContent.style.transform = 'translate(-50%, -50%)';
-                }
-            }
-        }
-
-        function fermerFenetre(id) {
-            const modal = document.getElementById(id);
-            if (modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        function amenerAuPremierPlan(id) {
-            const modal = document.getElementById(id);
-            if (modal) {
-                zIndexMax++;
-                modal.style.zIndex = zIndexMax;
-            }
-        }
-
-        function initDrag(e, modalWrapper) {
-            // On cible ici le .modal-content à déplacer
-            const modalContent = modalWrapper.querySelector(".modal-content");
-            elementEnCours = modalContent;
-
-            const rect = modalContent.getBoundingClientRect();
-            dragOffsetX = e.clientX - rect.left;
-            dragOffsetY = e.clientY - rect.top;
-
-            document.addEventListener('mousemove', deplacer);
-            document.addEventListener('mouseup', arreterDeplacer);
-        }
-
-        function deplacer(e) {
-            if (elementEnCours) {
-                let newLeft = e.clientX - dragOffsetX;
-                let newTop = e.clientY - dragOffsetY;
-
-                // Empêche la sortie de l'écran
-                const maxLeft = window.innerWidth - elementEnCours.offsetWidth;
-                const maxTop = window.innerHeight - elementEnCours.offsetHeight;
-
-                elementEnCours.style.left = Math.max(0, Math.min(newLeft, maxLeft)) + 'px';
-                elementEnCours.style.top = Math.max(0, Math.min(newTop, maxTop)) + 'px';
-                elementEnCours.style.transform = 'none'; // Supprime le centrage initial
-            }
-        }
-
-        function arreterDeplacer() {
-            if (elementEnCours) {
-                const id = elementEnCours.closest('.modal').id;
-                positionsSauvegardees[id] = {
-                    left: elementEnCours.style.left,
-                    top: elementEnCours.style.top
-                };
-            }
-
-            document.removeEventListener('mousemove', deplacer);
-            document.removeEventListener('mouseup', arreterDeplacer);
-            elementEnCours = null;
-        }
-
-    </script>
+    <script src="ressources/js/main.js"></script>
 
 </body>
 
