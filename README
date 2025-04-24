@@ -44,3 +44,21 @@ This is handled in JavaScript by checking the modal ID and adjusting the initial
 
 ## 📁 File Structure
 
+---
+
+## 🚀 How to Use
+
+1. Clone or download the repository.
+2. Open any of the HTML files in a web browser.
+3. Click the buttons to open the modals.
+4. Drag modals around or close them with the X icon or by clicking outside.
+
+## 📌 Future Improvements
+
+- Add keyboard navigation (e.g., ESC to close).
+- Enhance accessibility (ARIA attributes).
+- Add animations or transitions for modal appearance.
+
+## 🧑‍💻 Author
+
+This project was developed as part of a web development portfolio to demonstrate DOM manipulation, responsive design, and user interaction with JavaScript.
