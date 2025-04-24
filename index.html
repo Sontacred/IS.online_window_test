@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS.ON</title>
+    <link rel="icon" type="image/x-icon" href="ressources/img/BG1.png"> <!-- mettre une vraie icône -->
+    <link rel="stylesheet" href="ressources/css/global.css">
+    <link rel="stylesheet" href="ressources/js/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <p id="icon">+ + +</p>
+        <p id="icon">+ + +</p>
+        <p id="icon">+ + +</p>
+    </header>
+
+    <!-- SECTION -->
+    <section>
+        <article>
+            <h1 class="title">IS.ON</h1>
+            <div class="article-content">
+                <div class="links">
+                    <button onclick="ouvrirFenetre('fenetre-biography')">Biography</button>
+                    <button onclick="ouvrirFenetre('fenetre-content')">Design</button>
+                    <button onclick="ouvrirFenetre('fenetre-projects')">Projects</button>
+                    <button onclick="ouvrirFenetre('fenetre-contact')">Contact</button>
+                    <button onclick="ouvrirFenetre('fenetre-collection')">Collection</button>
+                    <a href="pages/collection.html">Design collections</a>
+                </div>
+                <img src="ressources/img/LOGO-ISON.png">
+            </div>
+        </article>
+
+        <div id="fenetre-biography" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-biography')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Biographie
+                    <span class="fermer" onclick="fermerFenetre('fenetre-biography')">&times;</span>
+                </div>
+                <div class="content">
+                    <p>
+                        <h1>IS.on // Sontacred</h1>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium tenetur officia repudiandae incidunt, quasi exercitationem quam a sint, modi quos similique illum obcaecati consequuntur, eos repellat. Debitis earum consectetur reprehenderit voluptate labore sint aliquid quasi asperiores voluptas, rerum maxime. Rem, eaque tenetur nisi modi tempora consectetur dignissimos iure laborum adipisci. Quos, aut tempore earum assumenda minima aliquam officia deserunt alias beatae nostrum aliquid ratione consectetur incidunt, aperiam voluptas. Expedita consequatur ullam harum eos soluta dolore maiores beatae facilis pariatur hic debitis labore, voluptate minima sunt, voluptatum, error unde! Consequatur voluptates consequuntur officia facere ipsa odio corrupti itaque inventore ea nulla at reprehenderit asperiores voluptatibus nostrum, eius delectus voluptatum dolores saepe deserunt ratione voluptate! Hic exercitationem quod esse soluta! Sit rem corporis obcaecati esse tempore ea sapiente doloremque soluta fugiat vitae tenetur sunt eum mollitia nam iure distinctio, illo cupiditate provident vero eligendi ipsam voluptatem! Nobis enim corporis porro odio quia quas? Repellendus, atque, eum saepe dolore odio nesciunt omnis ipsa fugiat porro, eveniet quos nulla veniam maiores pariatur cumque vero unde? Quasi voluptatem consequatur, sint iste consectetur accusantium ducimus nostrum suscipit corporis ratione ipsa itaque voluptas debitis velit dolorem eligendi nam? Quos ratione iure molestiae unde a iusto maiores laudantium! Officia eius ea adipisci maiores recusandae nulla alias quas numquam ut quia deserunt et dolore iste ullam accusantium illo ad, incidunt quisquam. Doloribus aperiam impedit in totam ut cum ea fuga, natus autem repellat dolorum, fugiat iste voluptatem quam! Autem labore exercitationem incidunt maxime pariatur atque modi vero minima! Voluptatibus doloremque, itaque rem a aliquid aut sunt delectus debitis fugiat impedit perferendis, architecto at qui autem praesentium, unde voluptate? Ipsum ad officia, dolores deserunt cupiditate earum in debitis a obcaecati? Ipsa in aperiam culpa expedita alias officia magni incidunt asperiores cum. Facilis reiciendis sapiente quas odio, fugiat totam asperiores beatae? Neque officia nemo deleniti temporibus, aliquam magni dolorum eius, aperiam quisquam culpa debitis. Aut nam beatae harum? Beatae recusandae fuga vero iure rerum sint consequatur minus, mollitia similique dolor quis fugit? Earum quis quisquam adipisci. Sint perspiciatis a doloremque ut commodi! Molestias nostrum modi velit quos excepturi explicabo minima ea qui illo dolore. Quos commodi iusto aliquam dicta, perspiciatis eos culpa, dolor neque fugiat tenetur eveniet soluta ducimus? Dolor vero, sequi nihil eum nobis totam quas temporibus beatae iure laudantium sed tempore veritatis explicabo expedita dolores dicta magnam omnis. Ipsum consectetur similique a, aliquam nobis dolor modi nemo reprehenderit. Aliquam quo qui hic recusandae eius sed voluptate sapiente iste nam doloremque debitis rerum exercitationem, incidunt nisi aut odit voluptatum.
+                        <br/>- ////\/
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-content" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-content')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Design
+                    <span class="fermer" onclick="fermerFenetre('fenetre-content')">&times;</span>
+                </div>
+                <div class="content">
+                    <img src="ressources/img/design/collection solid/solid-son 1.png">
+                    <div class="description">
+                        <p>[01]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/design/collection solid/solid-son 2.png">
+                    <div class="description">
+                        <p>[02]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/design/collection solid/solid-son 3.png">
+                    <div class="description">
+                        <p>[03]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/design/collection solid/solid-text 1.png">
+                    <div class="description">
+                        <p>[04]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/design/collection solid/solid-text 2.png">
+                    <div class="description">
+                        <p>[05]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                    <img src="ressources/img/design/collection solid/solid-text 3.png">
+                    <div class="description" id="last">
+                        <p>[06]</p>
+                        <p>Title - Collection name - IS.ON</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-projects" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-projects')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Projets
+                    <span class="fermer" onclick="fermerFenetre('fenetre-projects')">&times;</span>
+                </div>
+                <div class="content">
+                    <p>
+                        [ <span id="V">online</span> ] --------------------------------------<br/>-<br/>
+                        Recherche de projets en cours...<br/>>>> vide
+                        <br/>-<br/>-------------------------------------- [ <span id="R">offline</span> ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-contact" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-contact')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Contact
+                    <span class="fermer" onclick="fermerFenetre('fenetre-contact')">&times;</span>
+                </div>
+                <div class="content">
+                    <img src="ressources/img/call.png"> <!-- IMAGE -->
+                    <p class="contact">Mail : sontacred@gmail.com</p>
+                    <p class="contact">Tel : 07.68.47.09.20</p>
+                    <p class="lien">
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fenetre-collection" class="modal">
+            <div class="modal-content" onclick="amenerAuPremierPlan('fenetre-collection')">
+                <div class="modal-header" onmousedown="initDrag(event, this.parentElement.parentElement)">
+                    Collection
+                    <span class="fermer" onclick="fermerFenetre('fenetre-collection')">&times;</span>
+                </div>
+                <div class="content">
+                    <img src="ressources/img/88x31/1of2.gif">
+                    <img src="ressources/img/88x31/amiga.gif">
+                    <img src="ressources/img/88x31//arcnet.gif">
+                    <img src="ressources/img/88x31/awch_88x31.gif">
+                    <img src="ressources/img/88x31/button7.gif">
+                    <img src="ressources/img/88x31/wii_button.gif">
+                    <img src="ressources/img/88x31/ralseismokingadart.gif">
+                    <img src="ressources/img/88x31/firefox3.gif">
+                    <img src="ressources/img/88x31/freebielistbutton.gif">
+                    <img src="ressources/img/88x31/hicolor.gif">
+                    <img src="ressources/img/88x31/madewithamiga.gif">
+                    <img src="ressources/img/88x31/narrow-head.gif">
+                    <img src="ressources/img/88x31/newlambda.gif">
+                    <img src="ressources/img/88x31/piss.gif">
+                    <img src="ressources/img/88x31/sabrina.gif">
+                    <img src="ressources/img/88x31/sailormoonmicrobar.gif">
+                    <img src="ressources/img/88x31//so.gif">
+                    <img src="ressources/img/88x31//surf-to.gif">
+                    <img src="ressources/img/88x31/terrorpuppe.gif">
+                    <img src="ressources/img/88x31/theorb.gif">
+                    <img src="ressources/img/88x31/top_6.gif">
+                    <img src="ressources/img/88x31/winrar4.gif">
+                    <img src="ressources/img/88x31/xp.gif">
+                    <img src="ressources/img/88x31/zymicbest.gif">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="copy"> / / / /\/ /</p>
+        <p id="icon">+ + +</p>
+        <p class="copy">@ IS.ON</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="ressources/js/main.js"></script>
+
+</body>
+
+</html>
