@@ -59,7 +59,7 @@ This is handled in JavaScript by checking the modal ID and adjusting the initial
 ## 🚀 How to Use
 
 1. Clone or download the repository.
-2. Open any of the HTML files in a web browser.
+2. Open the `index.html` files in a web browser.
 3. Click the buttons to open the modals.
 4. Drag modals around or close them with the X icon or by clicking outside.
 
