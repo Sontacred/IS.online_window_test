@@ -43,6 +43,7 @@ This is handled in JavaScript by checking the modal ID and adjusting the initial
 
 ## 📁 File Structure
 
+```
 .
 ├── ressources/
 │   ├── css/
@@ -53,6 +54,7 @@ This is handled in JavaScript by checking the modal ID and adjusting the initial
 │       └── images used in the website
 ├── index.html
 └── README.md
+```
 
 ## 🚀 How to Use
 
