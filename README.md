@@ -44,8 +44,6 @@ This is handled in JavaScript by checking the modal ID and adjusting the initial
 ## 📁 File Structure
 
 .
-├── pages/
-│   └── pages linked to index.html
 ├── ressources/
 │   ├── css/
 │   │   └── global.css
