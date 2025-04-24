@@ -10,7 +10,6 @@ Key features include:
 
 - Reusable modal structure
 - Responsive design for desktop and mobile devices
-- Click-to-open and click-outside-to-close functionality
 - Ability to drag and reposition modals on screen
 - Customizable modal positions per window
 
@@ -28,7 +27,7 @@ Each modal window consists of two main elements:
 
 ### Opening and Closing
 - Modals are opened using a `data-modal-target` attribute on clickable elements.
-- They can be closed by clicking the close button (`.close-modal`) or by clicking outside the modal content.
+- They can be closed by clicking the close button (`.close-modal`).
 
 ### Drag and Drop
 - Modals can be dragged by clicking and holding the `.modal-header` area.
@@ -44,7 +43,18 @@ This is handled in JavaScript by checking the modal ID and adjusting the initial
 
 ## 📁 File Structure
 
----
+.
+├── pages/
+│   └── pages linked to index.html
+├── ressources/
+│   ├── css/
+│   │   └── global.css
+│   ├── js/
+│   │   └── main.js
+│   └── img/
+│       └── images used in the website
+├── index.html
+└── README.md
 
 ## 🚀 How to Use
 
